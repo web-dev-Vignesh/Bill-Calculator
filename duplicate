@@ -1,0 +1,72 @@
+ <!DOCTYPE html>
+    2 <html>
+    3     <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+    4     <head>
+    5         <title>Bill Calculator</title>
+    7     </head>
+    8     <body>
+    9         <h1>Bill Calculator</h1>
+   10         <form onsubmit="return calculateTotal();">
+   11             
+   12         <table>
+   13             <tr>
+   14                 <td>
+   15                     <label for="productName">Product Name</label>
+   16                 </td>
+   17                 <td>
+   18                     <input type="text" id="productName" placeholder="Product Name" required >
+   19                 </td>
+   20             </tr>
+   21             <br>
+   22             <tr>
+   23                 <td>
+   24                     <label for="price">Product Price in Rs.</label>
+   25                 </td>
+   26                 <td>
+   27                     <input type="number"  id="price" placeholder="Product Price" required />
+   28                 </td>
+   29             </tr>
+   30             <br>
+   31             <tr>
+   32                 <td>
+   33                     <label for="qty">Quantity</label>
+   34                 </td>
+   35                 <td>
+   36                     <input type="number" name="qty" id="qty" placeholder="Enter quantity" value="Quantity" required />
+   37                 </td>
+   38             </tr>
+   39              <br>
+   40             <tr>
+   41                 <td>
+   42                     <label for="totalprice">Total Price in Rs.</label>
+   43                 </td>
+   44                 <td>
+   45                       <output id="totalprice" for="price qty"></output>
+   46                 </td>
+   47             </tr>
+   48             <br>
+   49             <tr>
+   50                 
+   51                 <td>
+   52                           <input type="submit" name="submit" id="submit" value="Submit" />
+   53                  
+   54                 </td>
+   55             </tr>
+   56         </table>
+   57             
+   58     </form>
+   59     </body>
+   60     
+   61    
+   62    <script>
+    63     function calculateTotal(){
+    64         totalprice.innerHTML=price.value*qty.value;
+    65         return false;
+    66     }
+   67        
+   68    </script>
+   69    
+   70    
+   71
+        
+   80 </html> 

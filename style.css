@@ -1,0 +1,40 @@
+h1{
+   text-align:center;
+    color:#f03c90;
+    font-style:italic;
+    font-weight:bold;
+  }
+ 
+  table{
+      text-align:left;
+      width: 100%;
+      border-spacing:10px;
+      border-width:10%;
+      border-style:solid;
+      color: rgb(255, 123, 0);
+      font-weight: bolder;
+      background-color:#82ec2a;
+      font-size: 25px;
+    }
+    #submit,#price,#productname,#qty{
+        color: rgb(255, 17, 17);
+        font-weight: bolder;
+        font-size: large;
+
+
+    }
+    #totalprice{
+        padding: 0 100px;
+        background:white;
+    }
+    @media(min-width:700px){
+        table{
+            width: 0%;
+             margin-left:35%;
+
+         }
+     }
+     td{
+         border-style:double;
+         padding:10px;
+     }
